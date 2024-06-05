@@ -1,0 +1,38 @@
+.modal-body div {
+    margin-bottom: 3%;
+}
+
+.myLeave {
+    display: flex;
+    height: 57.65px;
+}
+
+.myLeave > label {
+    height: 24px;
+    margin-top: 1.6%;
+}
+
+.myLeave input[type="text"] {
+    width: 202.4px;
+    height: 37.65px;
+}
+
+.myLeave select {
+    width: 120px;
+    height: 37.65px;
+}
+
+.myLeave label,
+.form-group label {
+    margin-right: 11px;
+}
+
+.leaveModal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050; /* 확인 모달의 배경 z-index 설정 */
+    background-color: rgba(201, 200, 200, 0.7);
+}

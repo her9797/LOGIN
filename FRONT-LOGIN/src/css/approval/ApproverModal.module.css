@@ -1,0 +1,256 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modalOverlay.show {
+    display: flex;
+}
+
+.ApproverModalContent {
+    width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+    display: grid;
+    padding-top: 30px;
+}
+
+.ApproverModalBody {
+    display: flex;
+}
+
+.ApproverMemberList{
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 50px;
+}
+.memberListTitle{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-left: 30px;
+    min-width: 400px;
+}
+.clearButton{
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 2px;
+    border: none;
+}
+.ApproverDepartmentList{
+    text-align: left;
+    margin-top: 10px;
+    border : 1px solid gray;
+    height: 645px;
+    overflow-y: auto;
+    padding-left : 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding-right: 25px;
+}
+
+.ApproverDepartmentHeader{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ApproverDepartmentHeader span{
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom : 20px;
+    margin-right: 20px;
+}
+
+.ApproverMembers{
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.ApproverMemberItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ApproverMemberItem input{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.ApproverButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    gap: 260px;
+}
+
+.ApproverButtonsApprover, .ApproverButtonsReferencer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ApproverButtonsApprover button, .ApproverButtonsReferencer button{
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+
+.AppPlusBtn{
+    background-color: white;
+    color: red;
+}
+.AppMinusBtn{
+    background-color: white;
+    color: blue;
+}
+
+.SeletBox{
+    flex: 1;
+    overflow-y: auto;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    gap: 20px;
+}
+
+.SelectBoxApproverLine, .SelectBoxReferencerLine{
+    border: 1px solid gray;
+    height: 300px;
+    border-radius: 5px;
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+}
+
+.SelectBoxApproverTable{
+    border : none;
+    align-items: center;
+    width: 100%;
+}
+.SelectBoxApproverTable tr input{
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+.approvalItem{
+    cursor: pointer;
+}
+.SelectBoxApproverTable th, .SelectBoxApproverTable td{
+    max-width: 100px;
+    overflow: hidden;
+    padding: 5px;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border : none;
+}
+.moveButton{
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    justify-items: center;
+    padding: 3px;
+    border-radius: 10px;
+}
+.moveButton:first-of-type{
+    color: red;
+}
+.moveButton:last-of-type{
+    margin-left: 10px;
+    color: blue;
+}
+.moveButton:hover{
+    background-color: #EDEAEA;
+}
+
+
+.modalConfirmMessage {
+    align-self: center;
+    margin-top: 20px;
+}
+
+.modalActions{
+    /* margin-top: 20px;
+    display: flex;
+    justify-content: space-around; */
+    align-self: end;
+    justify-self: flex-end;
+    gap: 20px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.modalActions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.modalActions button:first-of-type {
+    background-color: white;
+    color: black;
+    border: 1px solid #BBBBBB;
+    border-radius: 10px;
+}
+.modalActions button:first-of-type:hover{
+    background-color: #EDEAEA;
+    color: black;
+}
+
+.modalActions button:last-of-type {
+    background-color: #112D4E;
+    color: white;
+    border-radius: 10px;
+}
+.modalActions button:last-of-type:hover{
+    background-color: #465970;
+    color: white;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

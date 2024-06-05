@@ -1,0 +1,339 @@
+/* .memberIdStyle, .emailStyle, .addressStyle, .phoneNoStyle, .employedDateStyle, .departStyle, .positionStyle, .memberStatusStyle, .nameStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+} */
+
+/* .memberId, .email, .address, .phoneNo, .employedDate, .departName, .positionName, .name, .memberStatus {
+    margin-right: 20px;
+    width: 100px;
+} */
+
+.inputStyles, .inputStyleConfirmed {
+    width: 300px;
+    height: auto;
+    /* padding-left: 10px; */
+    padding: 10px; /* Add padding for better visual appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-left: -50px;
+}
+
+.inputStyleForBirthday {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between;
+    width: 300px; /* Match the width of the inputStyles */
+    height: 52.22px;
+    margin-left: -50px;
+}
+
+.inputStylesForYear, .inputStylesForMonth, .inputStylesForDays {
+    width: 70px;
+    /* padding-left: 10px; */
+    padding: 10px; /* Add padding for better visual appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.inputStyles.inputStyles:focus, .inputStyleConfirmed:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a box shadow on focus */
+}
+
+.inputStyleConfirmed {
+    background-color: #D5D5D5;
+}
+
+.inputStylesForBox, .inputStyleConfirmed {
+    width: 300px;
+    height: 52.22px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; /* Add padding for better visual appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-left: -50px;
+}
+
+.main2Pages {
+    /* font-size: 20px; */
+    display: flex;
+    /* width: 100%; */
+    height: 90%;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-right: 5px; /* Add space between wrappers */
+}
+
+
+.inputWrapper span {
+    margin-left: 5px; /* Add space between input and span */
+}
+
+
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+form input, form button, form select, form textarea {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.columnStyle {
+    width: 90%;
+    height: auto;
+}
+
+.rowStyle {
+    /* flex: 1; Let the row fill the remaining space */
+    display: flex;
+}
+
+.cardOuterLine {
+    height: auto; /* Make sure the card fills the parent height */
+    width: auto;
+}
+.cardOuterLine2 {
+    height: auto; /* Make sure the card fills the parent height */
+}
+
+.firstPage, .secondPage {
+    display: flex;
+    flex-direction: column; /* Ensure the children stack vertically */
+    /* min-height: 100vh; Set minimum height to full viewport height */
+    overflow: hidden;
+}
+
+.pageTitleStyle {
+    margin: 20px 0px;
+    /* font-size: 20px; */
+}
+
+.profilePic {
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.contentStyle1 {
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px 0px 50px;
+}
+
+.contentStyle2 {
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 50px 0px 0px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.changePassword {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nameBox {
+    height: auto;
+    width: auto;
+    /* font-size: 30px; */
+    text-align: center;
+}
+
+.button onClick {
+    background-color: transparent;
+    height: 40px;
+    width: 80px;
+    border: none;
+    /* font-size: 24px; */
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.insertCorrection {
+    background-color: #3f72af;
+    cursor: pointer;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #3f72af;
+}
+
+.insertCorrection :hover {
+    cursor: #112d4e;
+}
+
+.memberIdStyle, .emailStyleForRegistration, .addressStyleForRegistration, .phoneNoStyleForRegistration, .employedDateStyle, .departStyle, .positionStyle, .memberStatusStyle, .nameStyleForRegisteration, .birthdayStyle, .genderStyle {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+}
+
+.birthdayStyle {
+    /* display: flex; */
+    width: 100%/3;
+    height: 46.22px;
+}
+
+.memberId, .email, .address, .phoneNo, .employedDate, .depart, .position, .name, .memberStatus, .gender, .birthday {
+    margin-right: 50px;
+    width: 100px;
+}
+
+.inputStyle, .inputStyleConfirmed {
+    width: 250px;
+    /* padding-left: 10px; */
+    padding: 10px; /* Add padding for better visual appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.inputStyle:focus, .inputStyleConfirmed:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a box shadow on focus */
+}
+
+.inputStyleConfirmed {
+    background-color: #D5D5D5;
+}
+
+.contentStyle3 {
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 20px 50px 50px 50px;
+}
+
+.notice-cancel-button {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.buttonClass {
+    margin-top: 50px;
+    /* margin-bottom: 40px; */
+    /* margin-right: 100px; */
+    text-align: right;
+}
+
+.transferredDateStyle, .positionNameStyle {
+    color: #D5D5D5;
+}
+
+.transferredDateStyle, .positionNameStyle, .departNameStyle {
+    text-align: left;
+}
+
+.departNameStyle {
+    color: black;
+}
+
+.birthdateInputs {
+    display: flex;
+    width: 50px;
+}
+
+/* #birth-year, #birth-month, #birth-day {
+     margin: 0px 10px;
+} */
+
+/* .postCodeStyle {
+    width: 400px;
+    height: 400px;
+    display: modalSt;
+    display: modalState ? 'block' : 'none',
+} */
+
+.postCodeStyle {
+    width: 400px;
+    height: 400px;
+    display: none; /* Initially hide the modal */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000; /* Ensure the modal appears above other elements */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.postCodeStyle.active {
+    display: block; /* Show the modal when the "active" class is applied */
+}
+
+.notice-insert-button {
+    background-color: #112D4E;
+    color: white;
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 50px;
+    width: auto;
+    margin-left: 15px;
+}
+
+.inputAddressButton {
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #3f72af;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    height: 46.22px;
+    width: auto;
+    margin-left: 15px;
+}
+
+
+label {
+    /* display: block; */
+    /* margin-top: 1em; */
+}
+
+
+.req {
+    color: red;
+}
+/* Light yellow background for required fields */
+
+/* Red border for invalid fields */
+input:required:invalid, select:required:invalid, textarea:required:invalid {
+    border: 2px solid red;
+}
+
+/* Green border for valid fields */
+input:required:valid, select:required:valid, textarea:required:valid {
+    /* border: 2px solid green; */
+    border: 1px solid #ccc;
+}

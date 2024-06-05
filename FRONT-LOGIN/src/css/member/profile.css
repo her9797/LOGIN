@@ -1,0 +1,143 @@
+.main2Pages12 {
+    /* font-size: 20px; */
+    display: flex;
+    width: 85%;
+    height: auto;
+    /* flex-wrap: nowrap; */
+}
+
+.columnStyle {
+    width: 90%;
+}
+
+.cardOuterLine {
+    width: 100%;
+    height: 100%;
+}
+
+.firstPage {
+    flex: 1; /* Make both pages take equal space */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* width: 42.5%; */
+}
+
+.secondPage {
+    flex: 1; /* Make both pages take equal space */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.pageTitleStyle {
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.profilePic {
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.contentStyle1 {
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px 0px 50px;
+}
+
+.contentStyle2 {
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 50px 0px 0px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.changePasswordButtonStyle {
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    background-color: #3F72AF;
+    border: 1px solid #3F72AF;
+    padding: 3px 6px;
+}
+
+.nameBox {
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button onClick {
+    background-color: transparent;
+    height: 40px;
+    width: 80px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.insertCorrection {
+    background-color: #3f72af;
+    cursor: pointer;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #3f72af;
+}
+
+.insertCorrection :hover {
+    cursor: #112d4e;
+}
+
+.memberIdStyle, .emailStyle, .addressStyle, .phoneNoStyle, .employedDateStyle, .departStyle, .positionStyle {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+}
+
+.memberId, .email, .address, .phoneNo, .employedDate, .depart, .position {
+    margin-right: 50px;
+    width: 100px;
+}
+
+.inputStyleWidth {
+    padding: 10px; /* Add padding for better visual appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    width: 350px;
+}
+
+.contentStyle3 {
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 20px 50px 0px 50px;
+}
+
+.transferredDateStyle, .positionNameStyle {
+    margin:20px;
+    align-items: center;
+}
+
+.departNameStyle {
+    margin: 20px 20px 20px 0px;
+}
+
+.contentStyle23 {
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px 0px 0px;
+}

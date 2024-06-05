@@ -1,0 +1,191 @@
+.progress {
+    width: 100%;
+    align-self: center;
+    --bs-progress-bar-bg: #112D4E;
+    margin-top: 7px;
+    display: flex;
+};
+
+.pageTitle {
+    margin-bottom: 20px;
+    margin-top: 20px;
+};
+
+.content1 {
+    margin-left: 25px;
+    text-align: center;
+    margin: 20px
+};
+
+.content2 {
+    margin-left: 25px;
+};
+
+.tableStyle {
+    width: 97%;
+    border-collapse: collapse;
+    text-align: center;
+};
+
+.select {
+    padding: 15px 10px;
+}
+.select input[type=radio]{
+    display: none;
+}
+.select input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    border: 1px solid #333;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+}
+.select input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.select input[type=radio]:checked+label{
+    background-color: #333;
+    color: #fff;
+}
+
+.red {
+    color: '#AF3131';
+    font-weight: 900;
+};
+
+.blue {
+    color: '#3F72AF';
+    font-weight: 900;
+};
+
+.black {
+    color: '#00000';
+    font-weight: 900;
+};
+
+/* 버튼 */
+.mini-btn {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #112D4E;
+    color: white;
+    border-radius: 5px;
+    padding: 1% 1.5%;
+    cursor: pointer;
+};
+/* 등록 */
+.regist {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #112D4E;
+    color: white;
+    border-radius: 5px;
+    padding: 1% 1.5%;
+    cursor: pointer;
+};
+.regist:hover {
+    background-color: #465970;
+};
+/* 취소 (확인) */
+.cancel {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 1% 1.5%;
+};
+
+#cancel {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 1% 1.5%; 
+};
+.cancel:hover {
+    background-color: #EDEAEA;
+};
+
+.insertCorrection {
+    font-size: 16px;
+    background-color: #3F72AF;
+    cursor: pointer;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #3F72AF;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+};
+.insertCorrection:hover {
+    background-color: #92B9E7;
+    border: #92B9E7;
+};
+
+/* .insertButton {
+    font-size: '16px';
+    width: '150px';
+    float: 'right';
+    background-color: '#112D4E';
+    color: 'white';
+    border-radius: '5px';
+    padding: '1% 1.5%';
+    cursor: 'pointer';
+    height: '45px';
+    text-decoration: 'none';
+    text-align: 'center';
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+};
+.updateButton {
+    font-size: '16px';
+    width: '150px';
+    float: 'right';
+    background-color: '#ffffff';
+    color: '#112D4E';
+    border-radius: '5px';
+    padding: '1% 1.5%';
+    cursor: 'pointer';
+    height: '45px';
+    text-decoration: 'none';
+    text-align: 'center';
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+};
+.insert2Button {
+    font-size: '16px';
+    width: '150px';
+    float: 'right';
+    background-color: '#3F72AF';
+    color: '#ffffff';
+    border-radius: '5px';
+    padding: '1% 1.5%';
+    cursor: 'pointer';
+    height: '45px';
+    margin-left: '20px';
+    text-decoration: 'none';
+    text-align: 'center';
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+}; */

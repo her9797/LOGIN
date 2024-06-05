@@ -1,0 +1,403 @@
+.bigContent {
+    margin: 10px;
+    width: 100%;
+    max-width: 1800px;
+    min-width: 1200px;
+    font-size: 15px;
+    /* margin-top : 50px; */
+    min-height: 1500px;
+    margin-bottom : 100px;
+    background-color: white;
+    padding:70px;
+    /* height: 1800px; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.approvalTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1500px; */
+    width: 650px;
+    margin-top: 50px;
+}
+
+.approvalTitle {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 400px;
+    font-size: 1.2em;
+    padding: 4px 0;
+    outline: none;
+    text-align: center;
+    word-wrap: break-word; /* 긴 단어를 줄바꿈 처리 */
+    white-space: pre-wrap; /* 공백을 유지하며 줄바꿈 처리 */
+    overflow-wrap: break-word; /* 긴 단어를 줄바꿈 처리 */
+    cursor:default;
+}
+
+.ContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentForm {
+    margin-top: 70px;
+    border: 1px solid black;
+    width: 900px;
+    min-height: 800px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 100px;
+}
+
+/* .contentForm body{
+    contenteditable: false;
+} */
+/* .contentForm .wholeForm {
+    margin-top: 50px !important;
+    padding: 70px !important;
+} */
+
+.contentForm table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    table-layout: fixed
+}
+
+.contentForm tr {
+    height: 70px;
+}
+
+.contentForm #sup_table {
+    height: 400px;
+}
+
+.contentForm #sideTable {
+    margin-bottom: 50px;
+}
+
+.contentForm th,
+.contentForm td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    white-space: normal;
+    -webkit-user-modify: read-only;
+    cursor: default;
+}
+
+.contentForm td {
+    word-break: break-all;
+}
+
+.contentForm th {
+    background-color: #e7e6e6;
+    width: 150px;
+    text-align: center;
+}
+
+
+.contentForm .exp_date {
+    text-align: left;
+}
+
+.contentForm th:first-child,
+.contentForm td:first-child:not(.exp_date):not(.sup_itemname):not(.sup_price) {
+    text-align: center;
+}
+
+.contentForm td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contentForm #rei_content {
+    height: 200px;
+}
+
+.contentForm #abs_reason {
+    height: 200px;
+}
+
+.contentForm #orders {
+    height: 150px;
+}
+
+.contentForm #date {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 50px;
+}
+
+.contentForm #useDetail {
+    width: calc(20% * 1.6);
+}
+
+.contentForm #usePrice {
+    width: calc(20% * 1.2);
+}
+
+.contentForm #sup_table #sup_header {
+    height: 35px;
+}
+
+.contentForm .purchasePrice {
+    height: 35px;
+}
+
+.contentForm #purchasePricetr {
+    height: 35px;
+}
+
+.contentForm .sup_itemname {
+    text-align: left;
+}
+
+.contentForm .sup_price {
+    text-align: right;
+}
+
+.contentForm .sup_itemAmount {
+    text-align: right;
+}
+
+#ovt_warning , .ovt_warning{
+    color: red;
+    font-weight: 1000;
+    background-color: red;
+}
+
+.contentForm #ovt_table td {
+    text-align: center;
+}
+
+.contentForm .nonContent {
+    height: 500px;
+}
+
+.contentForm .mce-content-body {
+    scrollbar-color: rgb(241, 255, 190) black;
+}
+
+.contentForm #date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ApprovalDetailBottom{
+    margin-bottom : 50px;
+}
+.actionBox{
+    display: flex;
+    flex-direction: column;
+    padding-left: 260px;
+    margin-top: 80px;
+    width: 100%;
+}
+.actionTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* background-color: #3F72AF;
+    color: white; */
+    border : 1px solid black;
+    
+}
+.actionButtons{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.actionButtons button {
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border:none;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #D9D9D9;
+}
+.selectedApprove {
+    background-color: #112D4E;
+    color: white;
+    border: none;
+}
+
+.selectedApprove:hover {
+    background-color: #465970;
+}
+
+.selectedReject {
+    background-color: #112D4E;
+    color: white;
+    border: none;
+}
+
+.selectedReject:hover {
+    background-color: #465970;
+}
+
+.unselected {
+    background-color: white;
+    color: black;
+    border: 1px solid #D9D9D9;
+}
+
+.unselected:hover {
+    background-color: #EDEAEA;
+}
+
+.attachmentsList {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+.attachmentList li{
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.attachmentListLabel{
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rejectReasonContainer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.rejectReasonLabel{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.rejectReasonContainer textarea{
+    height: 100px;
+    width: 900px;
+    resize:none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+.rejectReasonDisplay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 160px;
+    margin-top: 50px;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.rejectReasonLabel{
+    font-weight: bold;
+    font-size: 18px;
+}
+.rejectReason{
+    border: 1px solid black;
+    max-width: 500px;
+    min-height: 150px;
+    padding: 10px;
+}
+.attachmentsList{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+.attachmentList{
+    list-style:none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+.attachmentList li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.fileDownloadBtn{
+    margin-left: 20px;
+    background-color: white;
+
+    border:none;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.fileDownloadBtn:hover{
+     
+    background-color: #E9ECEF;
+}
+.fileDownloadBtn:hover a {
+    color: black;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    margin-bottom : 50px;
+    gap: 20px;
+}
+.buttonContainer button{
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    border:none;
+}
+.buttonContainer button:first-of-type{
+
+    background-color: white;
+    color: black;
+    border: 1px solid #D9D9D9;
+}
+.buttonContainer button:last-of-type{
+   
+    background-color: #112D4E;
+    color: white;
+}
+.buttonContainer button:first-of-type:hover{
+    background-color: #EDEAEA;
+}
+.buttonContainer button:last-of-type:hover{
+    background-color: #465970;
+}
