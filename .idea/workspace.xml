@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4fb2009c-6aa8-4d15-be95-c534912d4bf1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/DockerFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/240502671_증명사진123.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/123_김민재 증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/123_증명사진232.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/202401004_김지수 프로필.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240401001_제니 프로필사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240401552_김민재 증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240401835_profiel_pic_jeehwan.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240401835_구성원사진_샘플1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240501268_구성원사진_샘플1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240501467_profiel_pic_jeehwan.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240501847_jjang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240502348_profiel_pic_jeehwan.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240502382_hooni.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240502452_증명사진232.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240502512_모태미남증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240502675_고윤정 증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240502864_모태미남증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240503184_구성원사진_샘플1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240503700_empty_file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240503700_profiel_pic_jeehwan.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240503700_고윤정 증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240503700_구성원사진_샘플1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240503700_유병재 사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240503700_증명사진123.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240503700_증명사진232.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240503895_모태미남증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240505191_증명사진123.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/24051785_유병재 사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/24051785_증명사진232.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240518238_모태미남증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240518571_고윤정 증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240520839_구성원사진_샘플1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240520839_증명사진232.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240520840_모태미남증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240520880_유병재 사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240521352_구성원사진_샘플1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/24052375_모태미남증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/24052648_증명사진232.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240527001_김민재 증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240527200_증명사진123.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240527806_유병재 사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240528108_유병재 사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240528171_KakaoTalk_Photo_2024-05-28-15-06-44 001.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240528292_KakaoTalk_Photo_2024-05-28-15-06-44 001.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/240528903_KakaoTalk_Photo_2024-05-28-15-06-44 002.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/24055295_구성원사진_샘플1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/24055819_모태미남증명사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/241811_유병재 사진.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/gpt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/logo-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/noResultFound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/noResultsFound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/img/profile-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/magnifyingGlasses.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/css/main.4006b401.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/css/main.4006b401.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/js/main.3627d61c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/js/main.3627d61c.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/js/main.3627d61c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/bootstrap-icons.39795c0b4513de014cf8.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/boxicons.65a8ce52fc5427e8f94d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/boxicons.9e2b21b135bc7d4c803f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/boxicons.d12afc36557395143e4b.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/boxicons.db9ddb1898dbd76badca.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/boxicons.df635aaf04cd75132f62.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/remixicon.28ceff39ee3e17dc99db.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/remixicon.39f4def56d0e8712909a.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/remixicon.4c942de19d980993f612.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/remixicon.7735fab8dbf8ff78afe9.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/build/static/media/remixicon.8542c1bb279bcd77063a.eot" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/BACK-LOGIN/final">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2hV1qpFXRDGYiR7FQfAhzrmwaKr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/LOGIN/BACK-LOGIN",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-temurin-17.0.9-3183f394aec4-842bf14d" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fb2009c-6aa8-4d15-be95-c534912d4bf1" name="Changes" comment="" />
+      <created>1717664623445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717664623445</updated>
+      <workItem from="1717664624814" duration="361000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

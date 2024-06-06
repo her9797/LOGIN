@@ -1,0 +1,141 @@
+.linkWithoutUnderline {
+    text-decoration: none;
+    color: black;
+  }
+
+  .linkWithoutUnderline:hover {
+    color: rgb(1, 29, 54);
+  }
+  
+
+/* 페이지 타이틀 / 카드 제목 / 본문 배치 css 공통으로 분리 */
+.card-title {
+    margin-left: 30px;
+}
+
+.content {
+    margin-left: 100px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagetitle {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.ancListContent {
+  margin-left: 0px;
+}
+
+.noteListContent {
+  margin-left: 0px;
+}
+
+
+@keyframes loading {
+  0% {
+      content: "내역을 불러오는 중입니다.";
+  }
+  25% {
+      content: "내역을 불러오는 중입니다..";
+  }
+  50% {
+      content: "내역을 불러오는 중입니다...";
+  }
+  75% {
+      content: "내역을 불러오는 중입니다..";
+  }
+  100% {
+      content: "내역을 불러오는 중입니다.";
+  }
+}
+
+.loadingText::after {
+  content: "내역을 불러오는 중입니다.";
+  animation: loading 2s infinite;
+}
+
+.btn-positive {
+  background-color: #112D4E;
+  color: #ffffff;
+  border: solid 2px #112D4E;
+  border-radius: 10px;
+  padding: 1% 2%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-positive:hover {
+  background-color: #465970; 
+  color: #ffffff;
+  border: solid 2px #465970;
+}
+
+.btn-negative {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: solid 2px #D9D9D9;
+  border-radius: 10px;
+  padding: 1% 2%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-negative:hover {
+  background-color: #D9D9D9; 
+  color: #000000;
+  border: solid 2px #D9D9D9;
+}
+
+.btn-delete {
+  background-color: #ffffff;
+  color: #000000;
+  border: solid 2px #FA6060;
+  border-radius: 10px;
+  padding: 1% 2%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-delete:hover {
+  background-color: #FA6060; 
+  color: #ffffff;
+  border: solid 2px #FA6060;
+}
+
+.btn-blue {
+  font-size: 16px;
+  background-color: #3F72AF;
+  cursor: pointer;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #3F72AF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btn-blue:hover {
+  background-color: #92B9E7;
+  border-color: #92B9E7;
+}
+
+.btn-contentHeader {
+    background-color: #112D4E;
+    color: #ffffff;
+    border-radius: 10px; 
+    padding: 0.7% 1%;
+    cursor: pointer;
+    text-decoration: none;
+    width: auto;
+}
+
+.btn-contentHeader:hover {
+    background-color: #465970; 
+    color: #ffffff;
+}
