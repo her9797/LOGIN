@@ -368,9 +368,9 @@ function Insite() {
 
     const barChartStyles = {
         maxHeight: '220px',
-        marginBottom: '41px',
+        marginBottom: '28px',
         marginLeft: '10px',
-        maxWidth: '400px',
+        maxWidth: '470px',
         marginTop: '10px'
     }
 
