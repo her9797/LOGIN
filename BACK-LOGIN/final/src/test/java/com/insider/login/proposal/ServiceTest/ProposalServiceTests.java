@@ -1,6 +1,6 @@
 package com.insider.login.proposal.ServiceTest;
 
-import com.insider.login.proposal.DTO.ProposalDTO;
+import com.insider.login.proposal.dto.ProposalDTO;
 import com.insider.login.proposal.Service.ProposalService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;

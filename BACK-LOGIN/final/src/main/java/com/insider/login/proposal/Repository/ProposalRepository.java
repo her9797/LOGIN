@@ -1,8 +1,7 @@
 package com.insider.login.proposal.Repository;
 
-import com.insider.login.proposal.DTO.ProposalDTO;
+import com.insider.login.proposal.dto.ProposalDTO;
 import com.insider.login.proposal.Entity.Proposal;
-import io.micrometer.observation.ObservationFilter;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

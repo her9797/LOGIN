@@ -1,4 +1,4 @@
-package com.insider.login.proposal.DTO;
+package com.insider.login.proposal.dto;
 
 import lombok.*;
 
@@ -9,6 +9,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProposalDTO {
+
     private int id;               // 건의 아이디
     private String content;        // 건의 내용
     private int memberId;          // 작성자 사번

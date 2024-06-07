@@ -1,8 +1,7 @@
 package com.insider.login.proposal.ControllerTest;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.insider.login.proposal.DTO.ProposalDTO;
-import com.insider.login.proposal.Service.ProposalService;
+import com.insider.login.proposal.dto.ProposalDTO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -16,7 +15,6 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.time.LocalDate;
-import java.util.List;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

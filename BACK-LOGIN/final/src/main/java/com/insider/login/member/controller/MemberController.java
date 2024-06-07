@@ -101,7 +101,7 @@ public class MemberController {
         System.out.println("memberDTO: " + memberDTO);
 
         String fileName = memberDTO.getMemberId() + "_" + file.getOriginalFilename();
-        String directoryPath = "C:\\Users\\82108\\Desktop\\FRONT-LOGIN\\public\\img";
+        String directoryPath = "C:\\LOGIN\\FRONT-LOGIN\\public\\img";
         String filePath = directoryPath + "/" + fileName;
 
         Path targetLocation = Paths.get(filePath);

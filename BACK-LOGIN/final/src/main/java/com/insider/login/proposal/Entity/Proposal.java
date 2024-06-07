@@ -1,6 +1,6 @@
 package com.insider.login.proposal.Entity;
 
-import com.insider.login.proposal.DTO.ProposalDTO;
+import com.insider.login.proposal.dto.ProposalDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

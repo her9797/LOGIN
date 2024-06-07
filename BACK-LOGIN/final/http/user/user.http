@@ -29,9 +29,9 @@ Content-Type: application/json
 }
 
 --WebAppBoundary
-Content-Disposition: form-data; name="profilePictureImage"; filename="profilePicture.jpeg"
+Content-Disposition: form-data; name="profilePictureImage"; filename="hooni.jpg"
 
-< profilePicture.jpeg
+< hooni.jpg
 --WebAppBoundary--
 
 ### 로그인 (김지환)

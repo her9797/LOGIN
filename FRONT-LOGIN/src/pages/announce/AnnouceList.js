@@ -7,14 +7,16 @@ function AnnouncementsList({ maxVisibleAnnouncements, hidePagination, hidePlus }
     const { announcements, currentPage, totalPages } = useSelector(state => state.announceReducer);
     const dispatch = useDispatch();
 
-    const visibleAnnouncements = announcements.slice(0, maxVisibleAnnouncements); 
+    const visibleAnnouncements = announcements.slice(0, maxVisibleAnnouncements);
 
     useEffect(() => {
         dispatch(fetchAnnouncementsAsync(currentPage));
     }, [currentPage, dispatch]);
 
     const handlePageChange = (newPage) => {
-        dispatch(setCurrentPage({ page: newPage }));
+        if (newPage >= 0 && newPage < totalPages) {
+            dispatch(setCurrentPage({ page: newPage }));
+        }
     };
 
     const handlePrevPage = () => {
@@ -39,24 +41,17 @@ function AnnouncementsList({ maxVisibleAnnouncements, hidePagination, hidePlus }
         marginTop: '10px',
         marginBottom: '10px',
         marginLeft: '90%'
-    }
+    };
 
-    // 페이지 번호를 표시할 범위를 계산합니다.
     const getPaginationRange = () => {
         const totalPageNumbers = 10;
         const halfPageNumbers = Math.floor(totalPageNumbers / 2);
 
-        let start = currentPage - halfPageNumbers;
-        let end = currentPage + halfPageNumbers;
+        let start = Math.max(0, currentPage - halfPageNumbers);
+        let end = Math.min(totalPages, currentPage + halfPageNumbers + 1);
 
-        if (start < 0) {
-            start = 0;
-            end = totalPageNumbers;
-        }
-
-        if (end > totalPages) {
-            start = totalPages - totalPageNumbers;
-            end = totalPages;
+        if (end - start < totalPageNumbers) {
+            start = Math.max(0, end - totalPageNumbers);
         }
 
         return Array.from({ length: end - start }, (_, i) => i + start);
@@ -68,7 +63,7 @@ function AnnouncementsList({ maxVisibleAnnouncements, hidePagination, hidePlus }
         <div className="col-lg-12">
             <div className="card">
                 {hidePlus && (
-                    <div className='card-title' style={{fontWeight: 'bold', marginBottom: '-20px'}}>공지사항</div>
+                    <div className='card-title' style={{ fontWeight: 'bold', marginBottom: '-20px' }}>공지사항</div>
                 )}
                 {hidePlus ? (
                     <Link to="/Announces" style={{ padding: '10px 20px%', cursor: 'pointer', marginLeft: '93%', textDecoration: 'none', textAlign: 'center', marginTop: '10px', marginBottom: '10px', marginRight: '10px', fontSize: '12px' }}>+더보기</Link>

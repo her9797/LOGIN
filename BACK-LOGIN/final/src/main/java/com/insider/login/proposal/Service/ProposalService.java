@@ -1,6 +1,6 @@
 package com.insider.login.proposal.Service;
 
-import com.insider.login.proposal.DTO.ProposalDTO;
+import com.insider.login.proposal.dto.ProposalDTO;
 import com.insider.login.proposal.Entity.Proposal;
 import com.insider.login.proposal.Repository.ProposalRepository;
 import org.modelmapper.ModelMapper;
