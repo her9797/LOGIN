@@ -21,10 +21,10 @@ public class Proposal extends ProposalDTO {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Column(name = "proposal_id")
-    private int id;
+    private int proposalId;
 
     @Column(name = "content")
-    private String content;
+    private String proposalContent;
 
     @Column(name = "member_id")
     private int memberId;
@@ -39,36 +39,4 @@ public class Proposal extends ProposalDTO {
     private boolean deleteYn;
 
 
-
-    public Proposal(String content, int memberId, LocalDate proposalDate) {
-        this.content = content;
-        this.memberId = memberId;
-        this.setProposalDate(proposalDate);
-    }
-
-    public void setDate(LocalDate proposalDate) {
-        this.setProposalDate(proposalDate);
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public LocalDate getProposalDate() {
-        return this.proposalDate;
-    }
-
-    public void setProposalDate(LocalDate proposalDate) {
-        this.proposalDate = proposalDate;
-    }
-
-
-    public int getProposalNo() {
-        return id;
-    }
-
-
-    public void setMemberId(int memberId) {
-        this.memberId = memberId;
-    }
 }
