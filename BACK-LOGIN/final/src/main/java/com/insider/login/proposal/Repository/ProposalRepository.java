@@ -12,19 +12,4 @@ import java.util.Optional;
 @Repository
 public interface ProposalRepository extends JpaRepository<Proposal, Long> {
 
-    Page<Proposal> findByMemberIdAndDeleteYn(int memberId, String deleteYn, Pageable pageable);
-
-    Page<Proposal> findByReceiverIdAndDeleteYn(int receiverId, String deleteYn, Pageable pageable);
-
-    void deleteById(Long id);
-
-    Optional<Proposal> findById(Long id);
-
-    Page<Proposal> findByMemberId(int memberId, Pageable pageable);
-
-    Page<ProposalDTO> findById(Long id, Pageable pageable);
-
-    Page<Proposal> findByMemberId(String memberId, Pageable pageable);
-
-
 }

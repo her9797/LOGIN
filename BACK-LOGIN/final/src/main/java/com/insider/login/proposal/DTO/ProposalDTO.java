@@ -1,5 +1,6 @@
 package com.insider.login.proposal.dto;
 
+import jakarta.persistence.Column;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -8,15 +9,20 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class ProposalDTO {
 
-    private int proposalId;               // 건의 아이디
+    private int proposalId;
 
-    private String proposalContent;        // 건의 내용
+    private String proposalContent;
 
-    private int memberId;          // 작성자 사번
+    private int memberId;
 
-    private LocalDate proposalDate;  // 건의 등록일자
+    private LocalDate proposalDate;
+
+    private int receiverId;
+
+    private String deleteYn;
 
     public ProposalDTO(String proposalContent, int memberId, LocalDate proposalDate) {
         this.proposalContent = proposalContent;

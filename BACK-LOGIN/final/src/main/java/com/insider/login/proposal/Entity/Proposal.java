@@ -14,12 +14,10 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@ToString
-public class Proposal extends ProposalDTO {
+public class Proposal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     @Column(name = "proposal_id")
     private int proposalId;
 
@@ -36,7 +34,7 @@ public class Proposal extends ProposalDTO {
     private LocalDate proposalDate;
 
     @Column(name = "delete_yn")
-    private boolean deleteYn;
+    private String deleteYn;
 
 
 }

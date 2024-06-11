@@ -34,46 +34,23 @@ public class ProposalService {
     }
 
 
-    public ProposalDTO registerProposal(ProposalDTO proposalDTO) {
-        Proposal proposal = new Proposal();
-        BeanUtils.copyProperties(proposalDTO, proposal);
-        proposal.setProposalDate(LocalDate.from(LocalDateTime.now()));
-        Proposal savedProposal = proposalRepository.save(proposal);
-        ProposalDTO newProposal = modelMapper.map(savedProposal,ProposalDTO.class);
-        return newProposal;
-    }
-
-
-
-
-    public Map<String, Object> deleteProposal(Long id) {
-        Optional<Proposal> optionalProposal = proposalRepository.findById(id);
-        if (optionalProposal.isPresent()) {
-            proposalRepository.deleteById(id);
-            Map<String, Object> result = new HashMap<>();
-            result.put("삭제 결과", "성공");
-            return result;
-        } else {
-            throw new IllegalArgumentException("Proposal not found with id: " + id);
-        }
-    }
 
     /** 건의 등록 */
     public Map<String, Object> insertProposal(ProposalDTO proposalDTO) {
-
         Map<String, Object> result = new HashMap<>();
 
-        try {
+        proposalDTO.setProposalDate(LocalDate.now());
+        proposalDTO.setDeleteYn("N");
 
+        try {
             Proposal proposal = modelMapper.map(proposalDTO, Proposal.class);
             proposalRepository.save(proposal);
-
             result.put("result", true);
         } catch (Exception e) {
-
             log.error(e.getMessage());
             result.put("result", false);
         }
+
         return result;
     }
 }

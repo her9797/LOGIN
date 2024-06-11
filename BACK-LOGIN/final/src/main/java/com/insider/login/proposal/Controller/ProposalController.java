@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.LocalDate;
 
 @RestController
 @RequiredArgsConstructor
@@ -22,7 +21,7 @@ public class ProposalController {
     @PostMapping("/proposals")
     public ResponseEntity<ResponseMessage> insertProposal(@RequestBody ProposalDTO proposalDTO) {
 
-        proposalDTO.setProposalDate(LocalDate.now());
+        System.out.println("Received DTO: " + proposalDTO);  // 디버깅용
 
         return ResponseEntity.ok().body(new ResponseMessage(200, "등록 성공", proposalService.insertProposal(proposalDTO)));
 

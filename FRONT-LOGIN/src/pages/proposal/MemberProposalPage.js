@@ -1,34 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import { getProposals } from '../../apis/ProposalApi';
-const MemberProposalPage = ({ memberId }) => {
-    const [proposals, setProposals] = useState([]);
-    const [error, setError] = useState(null);
+// import React, { useState, useEffect } from 'react';
 
-    const fetchProposals = async () => {
-        try {
-            const data = await getProposals();
-            const memberProposals = data.filter(proposal => proposal.memberId === memberId);
-            setProposals(memberProposals);
-        } catch (error) {
-            setError(error.message);
-        }
-    };
+// const MemberProposalPage = ({ memberId }) => {
+//     const [proposals, setProposals] = useState([]);
+//     const [error, setError] = useState(null);
 
-    useEffect(() => {
-        fetchProposals();
-    }, [memberId]);
+//     const fetchProposals = async () => {
+//         try {
+//             const data = await getProposals();
+//             const memberProposals = data.filter(proposal => proposal.memberId === memberId);
+//             setProposals(memberProposals);
+//         } catch (error) {
+//             setError(error.message);
+//         }
+//     };
 
-    return (
-        <div className="proposal-page">
-            <h1>Your Proposals</h1>
-            {error && <div className="error">Error: {error}</div>}
-            <ul>
-                {proposals.map((proposal) => (
-                    <li key={proposal.id}>{proposal.content}</li>
-                ))}
-            </ul>
-        </div>
-    );
-};
+//     useEffect(() => {
+//         fetchProposals();
+//     }, [memberId]);
 
-export default MemberProposalPage;
+//     return (
+//         <div className="proposal-page">
+//             <h1>Your Proposals</h1>
+//             {error && <div className="error">Error: {error}</div>}
+//             <ul>
+//                 {proposals.map((proposal) => (
+//                     <li key={proposal.id}>{proposal.content}</li>
+//                 ))}
+//             </ul>
+//         </div>
+//     );
+// };
+
+// export default MemberProposalPage;

@@ -11,6 +11,7 @@ import approvalReducer from "./ApprovalReducer";
 import surveyReducer from "./SurveyModule";
 import insiteReducer from "./InsiteModule";
 import noticeReducer from "./NoticeModule";
+import proposalReducer from "./ProposalModule";
 
 
 const rootReducer = combineReducers({
@@ -26,7 +27,8 @@ const rootReducer = combineReducers({
     approval: approvalReducer,
     surveyReducer,
     insiteReducer,
-    noticeReducer
+    noticeReducer,
+    proposalReducer
 });
 
 export default rootReducer;
