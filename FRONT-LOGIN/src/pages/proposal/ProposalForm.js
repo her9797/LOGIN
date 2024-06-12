@@ -15,7 +15,7 @@ function ProposalForm({ onSubmit }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();  // 기본 제출 동작 방지
-
+    
         const proposalDTO = {
             proposalContent: proposalContent,
             memberId: memberId,
@@ -23,7 +23,7 @@ function ProposalForm({ onSubmit }) {
         };
         console.log("Submitting proposalDTO:", proposalDTO);  // 디버깅용
         dispatch(callInsertProposalAPI(proposalDTO));
-        onSubmit();
+        onSubmit(proposalContent); // 제출된 건의 내용을 함께 전달
     };
 
     return (

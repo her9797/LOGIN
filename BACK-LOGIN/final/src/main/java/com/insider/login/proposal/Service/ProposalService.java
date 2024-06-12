@@ -1,5 +1,8 @@
 package com.insider.login.proposal.Service;
 
+import com.insider.login.announce.dto.AnnounceDTO;
+import com.insider.login.announce.entity.Announce;
+import com.insider.login.common.CommonController;
 import com.insider.login.proposal.dto.ProposalDTO;
 import com.insider.login.proposal.Entity.Proposal;
 import com.insider.login.proposal.Repository.ProposalRepository;
@@ -39,7 +42,7 @@ public class ProposalService {
     public Map<String, Object> insertProposal(ProposalDTO proposalDTO) {
         Map<String, Object> result = new HashMap<>();
 
-        proposalDTO.setProposalDate(LocalDate.now());
+        proposalDTO.setProposalDate(CommonController.nowDate());
         proposalDTO.setDeleteYn("N");
 
         try {
@@ -52,5 +55,19 @@ public class ProposalService {
         }
 
         return result;
+    }
+
+    /** 건의 조회 */
+    public Page<ProposalDTO> selectProposalList(Pageable pageable) {
+        Page<Proposal> proposals;
+
+        proposals = proposalRepository.findAll(pageable);
+
+        if (proposals != null) {
+            return proposals.map(proposal -> modelMapper.map(proposal, ProposalDTO.class));
+        } else {
+            return Page.empty();
+        }
+
     }
 }

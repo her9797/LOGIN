@@ -31,7 +31,7 @@ public class Proposal {
     private int receiverId;
 
     @Column(name = "created_at")
-    private LocalDate proposalDate;
+    private String proposalDate;
 
     @Column(name = "delete_yn")
     private String deleteYn;

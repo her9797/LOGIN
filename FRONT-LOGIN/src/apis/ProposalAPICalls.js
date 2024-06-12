@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { POST_PROPOSAL } from "../modules/ProposalModule";
+import { GET_PROPOSALS, POST_PROPOSAL } from "../modules/ProposalModule";
 
 const API_BASE_URL = 'http://localhost:8080';
 
@@ -23,6 +23,19 @@ export const callInsertProposalAPI = (proposalDTO) => {
         } catch (error) {
             console.error('Failed to insert proposal', error);
             dispatch({ type: 'INSERT_PROPOSAL_FAILURE', payload: error });
+        }
+    };
+};
+
+export const callProposalListsAPI = (page = 0, size = 3, sort = 'proposalId', direction='DESC') => {
+    return async (dispatch) => {
+        try {
+            const proposalListResponse = await axios.get(`${API_BASE_URL}/proposals?page=${page}&size=${size}&sort=${sort}&direction=${direction}`, { headers });
+            const proposalList = proposalListResponse.data.results;
+            dispatch({ type: GET_PROPOSALS, payload: proposalList });
+            console.log('proposalListResponse', proposalListResponse);
+        } catch (error) {
+            console.error("Failed to fetch proposals:", error);
         }
     };
 };

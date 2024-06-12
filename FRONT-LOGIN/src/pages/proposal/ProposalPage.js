@@ -1,83 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import ProposalForm from './ProposalForm';
-// import ProposalApi from '../../apis/ProposalApi';
-// import '../../css/proposal/ProposalPage.css';
+import { callProposalListsAPI } from '../../apis/ProposalAPICalls';
+import { useSelector, useDispatch } from 'react-redux';
 
 const ProposalPage = ({ memberId }) => {
-    const [proposals, setProposals] = useState([
-        { content: "건의합니다", date: "2024-04-31" },
-        { content: "체육 대회 불참 건의", date: "2024-05-01" },
-        { content: "급여 정산 건의", date: "2024-05-07" },
-        { content: "연차 휴가, 촉진제도 연장 건의", date: "2024-05-24" },
-        { content: "구내식당 잔반처리 건의", date: "2024-05-24" },
-        { content: "사내 규율 추가 건의", date: "2024-05-28" },
-        { content: "생일자 조기퇴근 건의", date: "2024-05-31" },
-        // Add more proposals as needed
-    ]);
-    const [isAdmin, setIsAdmin] = useState(false);
-    const [currentPage, setCurrentPage] = useState(0);
-    const proposalsPerPage = 8;
+    const [proposalsPerPage] = useState(3); // 한 페이지에 표시할 건의 개수
+    const { proposalList, totalPages, currentPage } = useSelector(state => state.proposalReducer.proposalList) || {}; // proposalList가 undefined일 때의 처리
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        // Commenting out API calls for hardcoded data
-        // const fetchProposals = async () => {
-        //     try {
-        //         const data = await ProposalApi.getProposals(memberId);
-        //         if(Array.isArray(data)) {
-        //             setProposals(data);
-        //         } else {
-        //             console.error('Proposal data is not an array:', data);
-        //         }
-        //     } catch (error) {
-        //         console.error('Error fetching proposals:', error);
-        //     }
-        // };
-    
-        // fetchProposals();
-    }, [memberId]);
+        const fetchProposals = async () => {
+            try {
+                await dispatch(callProposalListsAPI(currentPage, proposalsPerPage, 'proposalId', 'DESC'));
+            } catch (error) {
+                console.error("Failed to fetch proposals:", error);
+            }
+        };
 
-    useEffect(() => {
-        // Commenting out API calls for hardcoded data
-        // const checkAdminStatus = async () => {
-        //     try {
-        //         const response = await ProposalApi.checkIsAdmin(memberId);
-        //         setIsAdmin(response.isAdmin);
-        //     } catch (error) {
-        //         console.error('Error checking admin status:', error);
-        //     }
-        // };
+        fetchProposals();
+    }, [currentPage, dispatch, proposalsPerPage]);
 
-        // checkAdminStatus();
-    }, [memberId]);
+    const handleProposalSubmit = (formData) => {
+    };
 
     const handlePageChange = (pageNumber) => {
-        setCurrentPage(pageNumber);
+        const nextPage = Math.max(0, Math.min(pageNumber, totalPages - 1));
+        dispatch(callProposalListsAPI(nextPage, proposalsPerPage, 'proposalId', 'DESC'));
     };
-
-    const handleProposalSubmit = (content) => {
-        const newProposal = {
-            content,
-            date: new Date().toISOString().split('T')[0]
-        };
-        setProposals([newProposal, ...proposals]);
-    };
-
-    const paginatedProposals = proposals.slice(
-        currentPage * proposalsPerPage,
-        (currentPage + 1) * proposalsPerPage
-    );
-
-    const totalPages = Math.ceil(proposals.length / proposalsPerPage);
 
     return (
         <main id="main" className="main">
             <div className="pagetitle">
-                <h1>{isAdmin ? '관리자 건의함' : '건의함'}</h1>
-                <nav>   
+                <nav>
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="/">Home</a></li>
                         <li className="breadcrumb-item">건의함</li>
-                        <li className="breadcrumb-item active">{isAdmin ? '관리자 건의 조회' : '건의 조회'}</li>
                     </ol>
                 </nav>
             </div>
@@ -87,26 +44,29 @@ const ProposalPage = ({ memberId }) => {
                         <ProposalForm onSubmit={handleProposalSubmit} />
                         <table className="table table-striped">
                             <thead>
-                            <tr>
-                                <th scope="col">내용</th>
-                                <th scope="col">작성일</th>
-                            </tr>
+                                <tr>
+                                    <th scope="col" style={{ width: '50%', textAlign: 'center'  }}>내용</th>
+                                    <th scope="col" style={{ width: '10%', textAlign: 'center' }}>작성일</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            {paginatedProposals.length > 0 ? (
-                                paginatedProposals.map((proposal, index) => (
-                                    <tr key={index}>
-                                        <td>{proposal.content}</td>
-                                        <td>{proposal.date}</td>
+                                {proposalList && proposalList.length > 0 ? (
+                                    proposalList.map((proposal, index) => (
+                                        <tr key={index}>
+                                            <td style={{ width: '50%', height: '150px',  textAlign: 'center'}}>{proposal.proposalContent}</td>
+                                            <td style={{ width: '10%', height: '150px', textAlign: 'center' }}>{proposal.proposalDate.split(',').join('-')}</td>
+                                            <td style={{ width: '35%', height: '150px', textAlign: 'right' }}>
+                                                <button style={{marginRight: '30px'}} className="btn-negative">삭제</button>
+                                            </td>
+                                        </tr>
+                                    ))
+                                ) : (
+                                    <tr>
+                                        <td colSpan="2" style={{ textAlign: 'center' }}>
+                                            작성된 건의가 없습니다.
+                                        </td>
                                     </tr>
-                                ))
-                            ) : (
-                                <tr>
-                                    <td colSpan="2" style={{ textAlign: 'center' }}>
-                                        {isAdmin ? '건의가 없습니다.' : '작성된 건의가 없습니다.'}
-                                    </td>
-                                </tr>
-                            )}
+                                )}
                             </tbody>
                         </table>
                         <nav style={{ display: 'flex', justifyContent: 'center' }}>
@@ -114,14 +74,14 @@ const ProposalPage = ({ memberId }) => {
                                 <li className={`page-item ${currentPage === 0 ? 'disabled' : ''}`}>
                                     <button className="page-link" onClick={() => handlePageChange(currentPage - 1)}>&laquo;</button>
                                 </li>
-                                {Array.from({ length: totalPages }, (_, i) => (
+                                {Array.from({ length: totalPages || 0 }, (_, i) => ( // totalPages가 undefined일 때의 처리
                                     <li key={i} className={`page-item ${currentPage === i ? 'active' : ''}`}>
                                         <button className="page-link" onClick={() => handlePageChange(i)}>
                                             {i + 1}
                                         </button>
                                     </li>
                                 ))}
-                                <li className={`page-item ${currentPage === totalPages - 1 ? 'disabled' : ''}`}>
+                                <li className={`page-item ${currentPage === (totalPages ? totalPages - 1 : 0) ? 'disabled' : ''}`}> {/* totalPages가 undefined일 때의 처리 */}
                                     <button className="page-link" onClick={() => handlePageChange(currentPage + 1)}>&raquo;</button>
                                 </li>
                             </ul>

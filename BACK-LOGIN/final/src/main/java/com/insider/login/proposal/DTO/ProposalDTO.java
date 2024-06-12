@@ -3,7 +3,6 @@ package com.insider.login.proposal.dto;
 import jakarta.persistence.Column;
 import lombok.*;
 
-import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -18,13 +17,13 @@ public class ProposalDTO {
 
     private int memberId;
 
-    private LocalDate proposalDate;
+    private String proposalDate;
 
     private int receiverId;
 
     private String deleteYn;
 
-    public ProposalDTO(String proposalContent, int memberId, LocalDate proposalDate) {
+    public ProposalDTO(String proposalContent, int memberId, String proposalDate) {
         this.proposalContent = proposalContent;
         this.memberId = memberId;
         this.proposalDate = proposalDate;

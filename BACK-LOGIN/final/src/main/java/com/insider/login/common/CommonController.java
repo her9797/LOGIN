@@ -12,7 +12,7 @@ public class CommonController {
     /** 페이징 관련 DATA 가져오는 메서드 */
     public static Pageable getPageable(int page, int size, String sort, String direction) {
         Sort pageableSort;
-        if ("ancNo".equals(sort) || "noteNo".equals(sort)) {
+        if ("ancNo".equals(sort) || "noteNo".equals(sort) || "proposalId".equals(sort)) {
             Sort.Direction sortDirection;
             try {
                 sortDirection = Sort.Direction.fromString(direction);
@@ -21,12 +21,17 @@ public class CommonController {
                 sortDirection = Sort.Direction.DESC;
             }
 
-            if ("noteNo".equals(sort)) {
-                pageableSort = Sort.by(sortDirection, "noteNo");
-            } else { // "ancNo"인 경우
-                pageableSort = Sort.by(sortDirection, "ancNo");
+            switch (sort) {
+                case "noteNo":
+                    pageableSort = Sort.by(sortDirection, "noteNo");
+                    break;
+                case "proposalId":
+                    pageableSort = Sort.by(sortDirection, "proposalId");
+                    break;
+                default: // "ancNo"인 경우
+                    pageableSort = Sort.by(sortDirection, "ancNo");
+                    break;
             }
-
         } else {
             pageableSort = Sort.unsorted();
         }
