@@ -1,0 +1,56 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+Accept: */*
+Content-Length: 49
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+{
+  "memberId": 240401835,
+  "password": "0000"
+}
+
+<> 2024-06-10T084718.200.json
+
+###
+
+POST http://localhost:8080/signUp
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Accept: */*
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 756
+
+--WebAppBoundary
+Content-Disposition: form-data; name="memberDTO"
+Content-Type: application/json
+
+{
+  "departmentDTO": {
+    "departNo": 1,
+    "departName": "인사팀"
+  },
+  "imageUrl": "이미지 경로들어갈 곳!!!!!!",
+  "address": "중구",
+  "email": "1111111111@naver.com",
+  "name": "김국진",
+  "password": "password01",
+  "birthday": "1997-01-20",
+  "gender": "m",
+  "positionDTO": {
+    "positionName": "알바",
+    "positionLevel": "90"
+  },
+  "phoneNo": "01012341234",
+  "role": "MEMBER"
+}
+--WebAppBoundary
+Content-Disposition: form-data; name="profilePictureImage"; filename="hooni.jpg"
+
+< C:\Users\82108\AppData\Local\Temp\http_request_input_file.txt
+--WebAppBoundary--
+
+<> 2024-06-10T084652.415.json
+
+###
+

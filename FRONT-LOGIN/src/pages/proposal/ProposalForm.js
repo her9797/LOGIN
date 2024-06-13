@@ -13,7 +13,7 @@ function ProposalForm({ onSubmit }) {
     const memberInfo = decodeJwt(token);
     const memberId = memberInfo.memberId;
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();  // 기본 제출 동작 방지
     
         const proposalDTO = {
@@ -22,8 +22,9 @@ function ProposalForm({ onSubmit }) {
             deleteYn: 'N'
         };
         console.log("Submitting proposalDTO:", proposalDTO);  // 디버깅용
-        dispatch(callInsertProposalAPI(proposalDTO));
-        onSubmit(proposalContent); // 제출된 건의 내용을 함께 전달
+        const result = await dispatch(callInsertProposalAPI(proposalDTO));
+        onSubmit(result); // 제출된 건의 내용을 함께 전달 (API 응답에서 데이터 추출)
+        setProposalContent(''); // 제출 후 텍스트 박스 비우기
     };
 
     return (
