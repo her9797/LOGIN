@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fb2009c-6aa8-4d15-be95-c534912d4bf1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Controller/ProposalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Controller/ProposalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Repository/ProposalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Repository/ProposalRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Service/ProposalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Service/ProposalService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,7 @@
       <workItem from="1717664624814" duration="361000" />
       <workItem from="1717976343508" duration="2824000" />
       <workItem from="1717982044587" duration="1031000" />
-      <workItem from="1718262201820" duration="829000" />
+      <workItem from="1718262201820" duration="2002000" />
     </task>
     <servers />
   </component>

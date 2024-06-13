@@ -61,5 +61,15 @@ public class ProposalController {
 
         return new ResponseEntity<>(responseMessage, headers, HttpStatus.OK);
     }
+    
+    @DeleteMapping("/proposals/{proposalId}")
+    public ResponseEntity<ResponseMessage> deleteProposal(@PathVariable("proposalId") int proposalId) {
+        Map<String, Object> result = proposalService.deleteProposal(proposalId);
+        if ((boolean) result.get("result")) {
+            return ResponseEntity.ok().body(new ResponseMessage(200, "삭제 성공", result));
+        } else {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new ResponseMessage(500, "삭제 실패", null));
+        }
+    }
 
 }

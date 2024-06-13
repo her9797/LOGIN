@@ -1,6 +1,7 @@
 package com.insider.login.proposal.Service;
 
 import com.insider.login.announce.dto.AnnounceDTO;
+import com.insider.login.announce.entity.AncFile;
 import com.insider.login.announce.entity.Announce;
 import com.insider.login.common.CommonController;
 import com.insider.login.proposal.dto.ProposalDTO;
@@ -18,6 +19,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -68,6 +70,21 @@ public class ProposalService {
         } else {
             return Page.empty();
         }
+
+    }
+
+    public Map<String, Object> deleteProposal(int proposalId) {
+
+        Map<String, Object> result = new HashMap<>();
+        result.put("result", true);
+
+        // 공지사항과 파일을 동시에 삭제 : 동일한 트랜잭션 내 로직
+        Proposal proposoal = proposalRepository.findByProposalId(proposalId);
+        if (proposoal != null) {
+
+            proposalRepository.delete(proposoal);
+        }
+        return result;
 
     }
 }

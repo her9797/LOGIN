@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import ProposalForm from './ProposalForm';
-import { callProposalListsAPI } from '../../apis/ProposalAPICalls';
+import Modal from '../note/modal'; 
+import { callProposalListsAPI, callDeleteProposalAPI } from '../../apis/ProposalAPICalls';
 import { useSelector, useDispatch } from 'react-redux';
 
 const ProposalPage = () => {
@@ -8,7 +9,9 @@ const ProposalPage = () => {
     const { proposalList, totalPages, currentPage } = useSelector(state => state.proposalReducer.proposalList) || {}; // proposalList가 undefined일 때의 처리
     const dispatch = useDispatch();
     
-    // fetchProposals 함수를 useCallback으로 정의
+    const [showModal, setShowModal] = useState(false); // 모달의 열림 상태를 관리
+    const [selectedProposalId, setSelectedProposalId] = useState(null); // 삭제할 제안의 ID를 저장하는 상태
+
     const fetchProposals = useCallback(async (page = currentPage) => {
         try {
             await dispatch(callProposalListsAPI(page, proposalsPerPage, 'proposalId', 'DESC'));
@@ -26,9 +29,30 @@ const ProposalPage = () => {
         await fetchProposals(0); // 페이지를 0으로 설정하여 첫 페이지에서 새롭게 업데이트된 제안을 포함하여 데이터를 다시 불러옴
     };
 
+    const handleDeleteProposal = async () => {
+        try {
+            if (selectedProposalId) {
+                await dispatch(callDeleteProposalAPI(selectedProposalId));
+                await fetchProposals(currentPage); // 현재 페이지의 데이터를 다시 불러옴
+                setShowModal(false); // 모달을 닫음
+            }
+        } catch (error) {
+            console.error("Failed to delete proposal:", error);
+        }
+    };
+
     const handlePageChange = (pageNumber) => {
         const nextPage = Math.max(0, Math.min(pageNumber, totalPages - 1));
         fetchProposals(nextPage);
+    };
+
+    const openModal = (proposalId) => {
+        setSelectedProposalId(proposalId);
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
     };
 
     return (
@@ -50,6 +74,7 @@ const ProposalPage = () => {
                                 <tr>
                                     <th scope="col" style={{ width: '50%', textAlign: 'center' }}>내용</th>
                                     <th scope="col" style={{ width: '10%', textAlign: 'center' }}>작성일</th>
+                                    <th scope="col" style={{ width: '10%', textAlign: 'center' }}>작업</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -58,14 +83,19 @@ const ProposalPage = () => {
                                         <tr key={index}>
                                             <td style={{ width: '50%', height: '150px', textAlign: 'center' }}>{proposal.proposalContent}</td>
                                             <td style={{ width: '10%', height: '150px', textAlign: 'center' }}>{proposal.proposalDate.split(',').join('-')}</td>
-                                            <td style={{ width: '35%', height: '150px', textAlign: 'right' }}>
-                                                <button style={{ marginRight: '30px' }} className="btn-negative">삭제</button>
+                                            <td style={{ width: '10%', height: '150px', textAlign: 'center' }}>
+                                                <button 
+                                                    className="btn-negative"
+                                                    onClick={() => openModal(proposal.proposalId)}
+                                                >
+                                                    삭제
+                                                </button>
                                             </td>
                                         </tr>
                                     ))
                                 ) : (
                                     <tr>
-                                        <td colSpan="2" style={{ textAlign: 'center' }}>
+                                        <td colSpan="3" style={{ textAlign: 'center' }}>
                                             작성된 건의가 없습니다.
                                         </td>
                                     </tr>
@@ -92,6 +122,7 @@ const ProposalPage = () => {
                     </div>
                 </div>
             </div>
+            <Modal isOpen={showModal} onClose={closeModal} onConfirm={handleDeleteProposal} />
         </main>
     );
 };

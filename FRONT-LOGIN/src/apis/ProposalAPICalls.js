@@ -17,7 +17,7 @@ const headers = {
 export const callInsertProposalAPI = (proposalDTO) => {
     return async (dispatch) => {
         try {
-            const response = await axios.post('http://localhost:8080/proposals', proposalDTO, {headers});
+            const response = await axios.post('http://localhost:8080/proposals', proposalDTO, { headers });
             console.log(response);
             dispatch({ type: 'INSERT_PROPOSAL_SUCCESS', payload: response.data });
         } catch (error) {
@@ -27,7 +27,7 @@ export const callInsertProposalAPI = (proposalDTO) => {
     };
 };
 
-export const callProposalListsAPI = (page = 0, size = 3, sort = 'proposalId', direction='DESC') => {
+export const callProposalListsAPI = (page = 0, size = 3, sort = 'proposalId', direction = 'DESC') => {
     return async (dispatch) => {
         try {
             const proposalListResponse = await axios.get(`${API_BASE_URL}/proposals?page=${page}&size=${size}&sort=${sort}&direction=${direction}`, { headers });
@@ -39,3 +39,14 @@ export const callProposalListsAPI = (page = 0, size = 3, sort = 'proposalId', di
         }
     };
 };
+
+export const callDeleteProposalAPI = (proposalId) => {
+    return async (dispatch) => {
+        try {
+            const deleleteProposalResponse = await axios.delete(`${API_BASE_URL}/proposals/${proposalId}`, { headers });
+            dispatch({ type: 'delete proposal', payload : deleleteProposalResponse.data})
+        } catch (error) {
+            console.error("Failed to delete proposals:", error);
+        }
+    }
+}

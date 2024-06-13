@@ -12,4 +12,5 @@ import java.util.Optional;
 @Repository
 public interface ProposalRepository extends JpaRepository<Proposal, Long> {
 
+    Proposal findByProposalId(int proposalId);
 }
