@@ -51,8 +51,11 @@ public class NoticeService {
                 .collect(Collectors.toList());
 
         log.info("[NoticeService] selectNoticeListByMemberId End ================");
+
+        int count = noticeDTOList.size(); // 알림 개수 계산
         Map<String, Object> result = new HashMap<>();
         result.put("result", noticeDTOList);
+        result.put("count", count); // 알림 개수 추가
 
         return result;
     }
@@ -86,4 +89,5 @@ public class NoticeService {
 
         return result;
     }
+
 }

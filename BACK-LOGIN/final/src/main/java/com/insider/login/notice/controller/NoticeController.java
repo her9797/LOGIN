@@ -2,13 +2,19 @@ package com.insider.login.notice.controller;
 
 import com.insider.login.common.ResponseMessage;
 import com.insider.login.notice.dto.NoticeDTO;
+import com.insider.login.notice.entity.Notice;
 import com.insider.login.notice.service.NoticeService;
 import org.apache.catalina.User;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 public class NoticeController {
@@ -28,9 +34,11 @@ public class NoticeController {
 
     /** 수신한 알림 내역 조회 */
     @GetMapping("/notices")
-    public ResponseEntity<ResponseMessage> selectNoticeListByMemberId(@RequestParam(value = "memberId") int memberId) {
-        return ResponseEntity.ok().body(new ResponseMessage(200, "조회 성공", noticeService.selectNoticeListByMemberId(memberId)));
+    public ResponseEntity<Map<String, Object>> selectNoticeListByMemberId(@RequestParam(value = "memberId") int memberId) {
+        Map<String, Object> result = noticeService.selectNoticeListByMemberId(memberId);
+        return ResponseEntity.ok(result);
     }
+
 
     /** 알림 선택 삭제 */
     @DeleteMapping("/notices/{noticeNo}")
