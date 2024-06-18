@@ -59,10 +59,9 @@ function RecordCommute() {
 
     /* 출퇴근 내역 API 호출 */
     useEffect(() => {
-        (dispatch(callSelectCommuteListAPI(target, targetValue, parsingDateOffset)));
-    }, [dispatch, todaysCommute, target, targetValue, date,
-        parsingDateOffset, showClockInModal, showClockOutModal, showClockLimitModal,
-        selectedDate, commuteList.correction, shouldRefresh]);
+    dispatch(callSelectCommuteListAPI(target, targetValue, parsingDateOffset));
+}, [dispatch, target, targetValue, parsingDateOffset]);
+
 
     /* 한 주 전으로 이동 */
     const handlePreviousClick = () => {
@@ -117,24 +116,7 @@ function RecordCommute() {
     const handleClockIn = () => {
         try {
 
-            // const koreaCurrentTimeMs = new Date(Date.now() + (9 * 60 * 60 * 1000)).getTime(); // UTC+9 (Korea)
-            // dispatch(setStartTime({ startTime: new Date(Date.now() + (9 * 60 * 60 * 1000)) }));
-
-            // // 예상 총 근로 시간 계산
-            // const expectedTotalWorkingTime = calculateExpectedTotalWorkingTime(
-            //     startTime?.getTime() || koreaCurrentTimeMs,
-            //     koreaCurrentTimeMs
-            // );
-            // dispatch(setExpectedTotalWorkingTime({ expectedTotalWorkingTime }));
-            // console.log('예상 총 근무시간 : ', expectedTotalWorkingTime);
-
-            // // 51시간 50분 초과 여부 확인 후 경고 모달 표시
-            // dispatch(
-            //     setWorkingHoursStatus({
-            //         isWorkingHoursLimited: expectedTotalWorkingTime > 51 * 60 + 50,
-            //         totalWorkingHours: expectedTotalWorkingTime,
-            //     })
-            // );
+        
 
             if (todayCommute != null) {
                 if (todayCommute.endWork == null) {
