@@ -1,4 +1,11 @@
-﻿# Log-in
+<div align="center">
+  
+# LOG:IN PROJECT
+
+### SpringBoot & React를 기반으로 개발한 프로젝트
+♣ 한 번의 로그인으로 모든 업무를 할 수 있는 HR 프로그램 ♣
+
+</div>
 
 
 ### PART
