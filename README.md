@@ -18,7 +18,7 @@
 
 |채팅|통계|공지사항|쪽지|
 |---|---|---|---|
-|![채팅](https://github.com/her9797/LOGIN/assets/153487372/43d4966e-d2dc-40c1-b734-e0e4d6363a16)|![통계](https://github.com/her9797/LOGIN/assets/153487372/8401cf06-300d-4c33-9762-31f10c647fa1)|![공지사항](https://github.com/her9797/LOGIN/assets/153487372/263e282e-e35e-44fc-a8a5-f68f56aa4729)|![쪽지](https://github.com/her9797/LOGIN/assets/153487372/1d3e031f-2f3a-48be-b632-a185b920aaef)|
+|![chat](https://github.com/her9797/LOGIN/assets/153487372/1de8a840-061b-4581-9417-9b0b54d3fac7)|![통계]![instie](https://github.com/her9797/LOGIN/assets/153487372/6a81994a-bd1c-46fa-a16e-c2fd61e729b5)|![공지사항]![announce](https://github.com/her9797/LOGIN/assets/153487372/40494317-095b-48c8-ae4d-1cd99d856a15)|![쪽지]![note](https://github.com/her9797/LOGIN/assets/153487372/2e5dfa54-1e00-4f26-8484-42b2af00d2c0)|
 |웹소켓 통신|chart.js|Quill editor|쪽지|
 
 ### 기능
