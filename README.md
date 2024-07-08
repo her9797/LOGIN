@@ -13,6 +13,12 @@
 
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"> ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
+### ERD & ENTITY 설계
+|ERD|ENTITY|
+|---|---|
+|![HR-ERD](https://github.com/her9797/LOGIN/assets/153487372/ef2fab5c-e7c3-4bcc-80fd-62923f3a07ab)|![HR-ENTITY](https://github.com/her9797/LOGIN/assets/153487372/75941059-cea7-4d61-9e9a-0c9d993b41b6)|
+
+
 
 ### PART
 
