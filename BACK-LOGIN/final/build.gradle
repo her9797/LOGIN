@@ -49,6 +49,10 @@ dependencies {
 	// websocket
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 
+	// validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+
 	testImplementation 'org.springframework.security:spring-security-test'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 

@@ -8,21 +8,20 @@ import '../css/MyLeaveCounts.css';
 function MyLeaveCounts() {
     const dispatch = useDispatch();
     const [totalDays, setTotalDays] = useState('');
-    const [remainingDays, setRemaingDats] = useState('');
+    const [remainingDays, setRemaingDats] = useState(0);
     const memberId = decodeJwt(window.localStorage.getItem("accessToken")).memberId;
-    // const memberId = 240528903; 
+    
 
     const { leaveInfo } = useSelector(state => state.leaveReducer);
 
     console.log(leaveInfo)
-
     useEffect(() => {
         const fetchMyLeaveCounts = async () => {
             try {
                 const response = await dispatch(callMyLeaveCountsAPI(memberId));
                 const myData = response.data
                 if (myData) {
-                    setRemaingDats(myData.remainingDays);
+                    setRemaingDats(myData.remainingDays ?? 0);
                     setTotalDays(myData.totalDays);
                 }
             } catch (error) {

@@ -12,6 +12,8 @@ function Weather() {
 
     const API_KEY = process.env.REACT_APP_API_KEY;
 
+    console.log(API_KEY);
+
     async function getEmoji(weather) {
 
         let emojiName = '';

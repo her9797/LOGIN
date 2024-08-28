@@ -9,6 +9,7 @@ import com.insider.login.webSocket.Cahtting.dto.EntRoomReqDTO;
 import com.insider.login.webSocket.Cahtting.entity.ChatRoom;
 import com.insider.login.webSocket.Cahtting.service.ChatRoomService;
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -47,7 +48,7 @@ public class ChatRoomController {
 
     /** 방 만들기 */
     @PostMapping("/")
-    public ResponseEntity<ChatRoom> saveEnteredRoom(@RequestBody EntRoomReqDTO request) {
+    public ResponseEntity<ChatRoom> saveEnteredRoom(@RequestBody @Valid EntRoomReqDTO request) {
         int memberId = request.getMemberId();
         int receiverId = request.getReceiverId();
         String roomName = request.getRoomName();

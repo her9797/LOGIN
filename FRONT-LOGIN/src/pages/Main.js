@@ -59,7 +59,7 @@ function Main() {
                     <ClockContainer />
                 </div>
                 <div className="main-card">
-                    {/* <Weather /> */}
+                    <Weather />
                     {/* API 횟수 제한이 있어서, 주석 해놓겠습니다 */}
                 </div>
                 <div className="main-card">

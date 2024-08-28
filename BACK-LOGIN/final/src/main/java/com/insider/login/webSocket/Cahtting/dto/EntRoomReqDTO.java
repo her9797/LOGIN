@@ -1,6 +1,7 @@
 package com.insider.login.webSocket.Cahtting.dto;
 
 import jakarta.persistence.Column;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 @Setter
@@ -14,6 +15,7 @@ public class EntRoomReqDTO {
 
         private int enteredRoomId;
 
+        @NotBlank()
         private int receiverId;
 
         private String roomName;

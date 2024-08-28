@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fb2009c-6aa8-4d15-be95-c534912d4bf1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aa4782c4-2e17-4287-adbf-c6d5836b46ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aa4782c4-2e17-4287-adbf-c6d5836b46ef.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Controller/ProposalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Controller/ProposalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Repository/ProposalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Repository/ProposalRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Service/ProposalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/proposal/Service/ProposalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/webSocket/Cahtting/controller/ChatRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/webSocket/Cahtting/controller/ChatRoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/webSocket/Cahtting/dto/EntRoomReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-LOGIN/final/src/main/java/com/insider/login/webSocket/Cahtting/dto/EntRoomReqDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/src/common/MyLeaveCounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/FRONT-LOGIN/src/common/MyLeaveCounts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/src/common/Weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/FRONT-LOGIN/src/common/Weather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONT-LOGIN/src/pages/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/FRONT-LOGIN/src/pages/Main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +79,7 @@
     &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/db/insider_member_info.sql&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/★Study★/LOGIN&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -110,14 +117,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -130,6 +129,11 @@
       <workItem from="1717976343508" duration="2824000" />
       <workItem from="1717982044587" duration="1031000" />
       <workItem from="1718262201820" duration="2002000" />
+      <workItem from="1718887246216" duration="418000" />
+      <workItem from="1719234632640" duration="314000" />
+      <workItem from="1719755087437" duration="843000" />
+      <workItem from="1723571448200" duration="15000" />
+      <workItem from="1724811444169" duration="562000" />
     </task>
     <servers />
   </component>
